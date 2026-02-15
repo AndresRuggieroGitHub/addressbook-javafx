@@ -1,57 +1,65 @@
-# adressAppMavenJavaFX
+# AddressBook JavaFX
 
-Pequeña aplicación JavaFX de ejemplo (Address Book) creada con Maven.
+Aplicación de ejemplo en Java que utiliza JavaFX y FXML para gestionar una libreta
+de direcciones (contactos). Está pensada como proyecto didáctico y como base para
+extensiones posteriores.
 
-## Descripción
+## Qué incluye
 
-Proyecto de escritorio en Java que demuestra uso de JavaFX, FXML y algunas librerías auxiliares (ControlsFX, TilesFX, BootstrapFX, PDFViewerFX, etc.).
-
-# addressbook-javafx
-
-Address Book JavaFX — aplicación de ejemplo creada con Maven.
-
-## Descripción
-
-Aplicación de escritorio en Java que demuestra el uso de JavaFX y FXML para gestionar una lista de contactos. Incluye ejemplos de integración con librerías como ControlsFX, TilesFX y PDFViewerFX.
+- Interfaz construida con JavaFX y FXML
+- Ejemplos de integración con librerías como ControlsFX, TilesFX y PDFViewerFX
+- Recursos: estilos CSS, ayuda y vistas FXML
 
 ## Requisitos
 
 - JDK 21 (o la versión indicada en `pom.xml`)
-- Maven (se incluye Maven Wrapper `mvnw` / `mvnw.cmd`)
+- Maven (se incluye Maven Wrapper: `mvnw` / `mvnw.cmd`)
 
-## Compilar y ejecutar
+> En la mayoría de sistemas el wrapper de Maven gestiona las dependencias. Si usas
+> un IDE, selecciona Java 21 como SDK del proyecto.
 
-En Windows (desde la raíz del proyecto):
+## Cómo compilar y ejecutar
+
+Desde la raíz del proyecto — Windows:
 
 ```powershell
 .\mvnw.cmd -DskipTests package
 .\mvnw.cmd javafx:run
 ```
 
-En Linux / macOS:
+macOS / Linux:
 
 ```bash
 ./mvnw -DskipTests package
 ./mvnw javafx:run
 ```
 
-Si usas un IDE (IntelliJ/VSCode) asegúrate de seleccionar el JDK correcto y, si es necesario, configurar las VM options para JavaFX.
+Ejecución desde IDE (IntelliJ / VSCode):
 
-## Estructura del proyecto
+1. Importa el proyecto como Maven.
+2. Selecciona Java 21 como SDK del proyecto.
+3. Ejecuta la clase `es.damdi.andresrl.adressappmavenjavafx.MainApp`.
+
+## Estructura principal
 
 - `src/main/java` — código fuente
-- `src/main/resources` — FXML, CSS y recursos (imágenes, help, etc.)
+- `src/main/resources` — FXML, CSS, imágenes y ayuda
 - `pom.xml` — configuración de Maven y dependencias
+
+## Contribuir
+
+Si quieres proponer mejoras, abre un **issue** o envía un **pull request**. Para
+trabajos más grandes, utiliza ramas `feature/xxx` y describe los cambios en la PR.
 
 ## Repositorio
 
-Repositorio en GitHub: https://github.com/AndresRuggieroGitHub/addressbook-javafx
+https://github.com/AndresRuggieroGitHub/addressbook-javafx
 
 ## Licencia
 
-Proyecto con licencia MIT (ver `LICENSE`).
+Este proyecto está bajo la licencia MIT — ver `LICENSE`.
 
 ---
 
-Si quieres que haga algún cambio adicional al `README` (más capturas, instrucciones de desarrollo o badges), dímelo y lo actualizo.
-Este repositorio incluye una licencia MIT en `LICENSE`.
+Notas opcionales que se pueden añadir más adelante: capturas de pantalla,
+badges de compilación/CI (GitHub Actions) o un `CHANGELOG.md`.
