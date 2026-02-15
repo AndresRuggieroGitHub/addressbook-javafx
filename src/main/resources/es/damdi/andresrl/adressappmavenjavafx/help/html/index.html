@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Andrés Ruggiero Lujan -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario - AddressApp</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>AddressApp - Manual de Usuario</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#gestion">Gestión de Contactos</a></li>
+                <li><a href="#graficos">Gráficos Estadísticos</a></li>
+                <li><a href="#persistencia">Persistencia de Datos</a></li>
+                <li><a href="#atajos">Atajos de Teclado</a></li>
+                <li><a href="#despliegue">Despliegue</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gestion">
+            <h2>🔄 Gestión de Contactos</h2>
+            <article>
+                <h3>Crear Nuevo Contacto</h3>
+                <p>Para agregar un nuevo contacto:</p>
+                <ol>
+                    <li>Haz clic en <strong>Archivo → Nuevo</strong></li>
+                    <li>Completa todos los campos obligatorios</li>
+                    <li>Presiona <em>Guardar</em></li>
+                </ol>
+                <img src="screenshots/new-contact.png" alt="Nuevo contacto">
+            </article>
+
+            <article>
+                <h3>Editar/Eliminar Contactos</h3>
+                <p>Selecciona un contacto de la tabla y:</p>
+                <ul>
+                    <li>Doble clic para editar</li>
+                    <li>Botón derecho → Eliminar</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="graficos">
+            <h2>📊 Gráficos Estadísticos</h2>
+            <div class="chart-types">
+                <div class="chart-card">
+                    <h3>Gráficos con Datos Reales</h3>
+                    <ul>
+                        <li>Distribución por Generaciones (Pie Chart)</li>
+                        <li>Donut Chart Generacional (TilesFX)</li>
+                    </ul>
+                    <img src="screenshots/real-charts.png" alt="Gráficos reales">
+                </div>
+                
+                <div class="chart-card">
+                    <h3>Gráficos Demostrativos</h3>
+                    <ul>
+                        <li>Población Mundial</li>
+                        <li>Ventas Diarias</li>
+                        <li>Comparativa Anual</li>
+                    </ul>
+                    <img src="screenshots/demo-charts.png" alt="Gráficos demostrativos">
+                </div>
+            </div>
+        </section>
+
+        <section id="persistencia">
+            <h2>💾 Persistencia de Datos</h2>
+            <p>La aplicación usa <strong>JSON</strong> para guardar los datos:</p>
+            <div class="code-block">
+                <code>
+                    // Ejemplo de guardado<br>
+                    Archivo → Guardar (Ctrl+S)<br>
+                    // Formato JSON generado:<br>
+                    {<br>
+                    &nbsp;&nbsp;"persons": [ ... ]<br>
+                    }
+                </code>
+            </div>
+        </section>
+
+        <section id="atajos">
+            <h2>⌨️ Atajos de Teclado</h2>
+            <table>
+                <tr>
+                    <th>Combinación</th>
+                    <th>Acción</th>
+                    <th>Menú</th>
+                </tr>
+                <tr>
+                    <td>Ctrl + N</td>
+                    <td>Nueva Agenda</td>
+                    <td>Archivo → Nuevo</td>
+                </tr>
+                <tr>
+                    <td>Ctrl + O</td>
+                    <td>Abrir Archivo</td>
+                    <td>Archivo → Abrir</td>
+                </tr>
+                <tr>
+                    <td>Ctrl + S</td>
+                    <td>Guardar</td>
+                    <td>Archivo → Guardar</td>
+                </tr>
+                <tr>
+                    <td>Ctrl + Q</td>
+                    <td>Salir</td>
+                    <td>Archivo → Salir</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="despliegue">
+            <h2>🚀 Despliegue</h2>
+            <h3>Desde Ejecutable</h3>
+            <p>Navega al directorio <code>ejecutable/</code> y:</p>
+            <pre>java -jar adressAppMavenJavaFX.jar</pre>
+            
+            <h3>Desde Código Fuente</h3>
+            <pre>mvn clean javafx:run</pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 AddressApp</p>
+        <address>
+            <p>Andrés Ruggiero Lujan</p>
+            <p>2DAM - HLC</p>
+        </address>
+    </footer>
+</body>
+</html>
