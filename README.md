@@ -1,5 +1,11 @@
 # 📒 AddressBook JavaFX
 
+![Java](https://img.shields.io/badge/Java-21-blue)
+![JavaFX](https://img.shields.io/badge/GUI-JavaFX-orange)
+![Maven](https://img.shields.io/badge/Build-Maven-red)
+![FXML](https://img.shields.io/badge/View-FXML-purple)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
 Aplicación desarrollada en **Java 21** utilizando **JavaFX** y **FXML** para gestionar una libreta de direcciones (contactos). Está pensada como proyecto didáctico y como base para
 extensiones posteriores.
 
