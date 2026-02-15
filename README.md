@@ -1,65 +1,77 @@
-# AddressBook JavaFX
+# 📒 AddressBook JavaFX
 
-Aplicación de ejemplo en Java que utiliza JavaFX y FXML para gestionar una libreta
-de direcciones (contactos). Está pensada como proyecto didáctico y como base para
+Aplicación desarrollada en **Java 21** utilizando **JavaFX** y **FXML** para gestionar una libreta de direcciones (contactos). Está pensada como proyecto didáctico y como base para
 extensiones posteriores.
 
-## Qué incluye
 
-- Interfaz construida con JavaFX y FXML
-- Ejemplos de integración con librerías como ControlsFX, TilesFX y PDFViewerFX
-- Recursos: estilos CSS, ayuda y vistas FXML
+## 🚀 Características
 
-## Requisitos
+- Interfaz gráfica desarrollada con **JavaFX + FXML**
+- Arquitectura basada en Maven
+- Integración con librerías externas:
+  - ControlsFX
+  - TilesFX
+  - PDFViewerFX
+- Estilos personalizados mediante CSS
+- Separación entre lógica, vista y recursos
+
+
+## 🛠️ Tecnologías utilizadas
+
+- Java 21  
+- JavaFX  
+- Maven (incluye Maven Wrapper)  
+- FXML  
+- CSS  
+
+
+## 📦 Requisitos
 
 - JDK 21 (o la versión indicada en `pom.xml`)
-- Maven (se incluye Maven Wrapper: `mvnw` / `mvnw.cmd`)
+- No es necesario instalar Maven manualmente (incluye `mvnw` / `mvnw.cmd`)
 
-> En la mayoría de sistemas el wrapper de Maven gestiona las dependencias. Si usas
-> un IDE, selecciona Java 21 como SDK del proyecto.
+> ⚠️ Si usa un IDE, asegurarse de configurar Java 21 como SDK del proyecto.
 
-## Cómo compilar y ejecutar
 
-Desde la raíz del proyecto — Windows:
+## ▶️ Compilación y ejecución
+
+### Windows
 
 ```powershell
-.\mvnw.cmd -DskipTests package
+.\mvnw.cmd clean package
 .\mvnw.cmd javafx:run
 ```
 
-macOS / Linux:
+### macOS / Linux
 
 ```bash
-./mvnw -DskipTests package
+./mvnw clean package
 ./mvnw javafx:run
 ```
 
-Ejecución desde IDE (IntelliJ / VSCode):
 
-1. Importa el proyecto como Maven.
-2. Selecciona Java 21 como SDK del proyecto.
-3. Ejecuta la clase `es.damdi.andresrl.adressappmavenjavafx.MainApp`.
+## 💻 Ejecución desde IDE (IntelliJ / VSCode)
 
-## Estructura principal
+1. Importar el proyecto como **Maven Project**
+2. Configurar **Java 21** como SDK
+3. Ejecutar la clase:
 
-- `src/main/java` — código fuente
-- `src/main/resources` — FXML, CSS, imágenes y ayuda
-- `pom.xml` — configuración de Maven y dependencias
+```
+es.damdi.andresrl.adressappmavenjavafx.MainApp
+```
 
-## Contribuir
 
-Si quieres proponer mejoras, abre un **issue** o envía un **pull request**. Para
-trabajos más grandes, utiliza ramas `feature/xxx` y describe los cambios en la PR.
+## 📂 Estructura del proyecto
 
-## Repositorio
+```
+src/
+ ├── main/
+ │   ├── java/        → Código fuente
+ │   └── resources/   → FXML, CSS, imágenes y ayuda
+pom.xml               → Configuración y dependencias Maven
+```
 
-https://github.com/AndresRuggieroGitHub/addressbook-javafx
 
-## Licencia
+## 📄 Licencia
 
 Este proyecto está bajo la licencia MIT — ver `LICENSE`.
-
----
-
-Notas opcionales que se pueden añadir más adelante: capturas de pantalla,
-badges de compilación/CI (GitHub Actions) o un `CHANGELOG.md`.
