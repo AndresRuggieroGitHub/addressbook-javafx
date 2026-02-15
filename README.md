@@ -6,10 +6,18 @@ Pequeña aplicación JavaFX de ejemplo (Address Book) creada con Maven.
 
 Proyecto de escritorio en Java que demuestra uso de JavaFX, FXML y algunas librerías auxiliares (ControlsFX, TilesFX, BootstrapFX, PDFViewerFX, etc.).
 
+# addressbook-javafx
+
+Address Book JavaFX — aplicación de ejemplo creada con Maven.
+
+## Descripción
+
+Aplicación de escritorio en Java que demuestra el uso de JavaFX y FXML para gestionar una lista de contactos. Incluye ejemplos de integración con librerías como ControlsFX, TilesFX y PDFViewerFX.
+
 ## Requisitos
 
-- JDK 21 (o la versión configurada en `pom.xml`).
-- Maven (se incluye Maven Wrapper `mvnw` y `mvnw.cmd`).
+- JDK 21 (o la versión indicada en `pom.xml`)
+- Maven (se incluye Maven Wrapper `mvnw` / `mvnw.cmd`)
 
 ## Compilar y ejecutar
 
@@ -27,35 +35,23 @@ En Linux / macOS:
 ./mvnw javafx:run
 ```
 
-Si usas un IDE (IntelliJ/VSCode) asegúrate de usar un JDK compatible y configurar VM options para JavaFX si es necesario.
+Si usas un IDE (IntelliJ/VSCode) asegúrate de seleccionar el JDK correcto y, si es necesario, configurar las VM options para JavaFX.
 
-## Estructura
+## Estructura del proyecto
 
-- `src/main/java`: código fuente Java
-- `src/main/resources`: fxml, CSS y recursos
-- `pom.xml`: configuración de Maven
+- `src/main/java` — código fuente
+- `src/main/resources` — FXML, CSS y recursos (imágenes, help, etc.)
+- `pom.xml` — configuración de Maven y dependencias
 
-## Subir a GitHub
+## Repositorio
 
-1. Crea un repositorio vacío en GitHub (por ejemplo `adressAppMavenJavaFX`).
-2. Añade el remoto y empuja:
-
-```bash
-git remote add origin https://github.com/<usuario>/<repo>.git
-git branch -M main
-git push -u origin main
-```
-
-Si tienes la CLI de GitHub (`gh`) instalada puedes crear y empujar en un paso:
-
-```bash
-gh repo create <usuario>/<repo> --public --source=. --remote=origin --push
-```
+Repositorio en GitHub: https://github.com/AndresRuggieroGitHub/addressbook-javafx
 
 ## Licencia
 
-Este repositorio incluye una licencia MIT en `LICENSE`.
+Proyecto con licencia MIT (ver `LICENSE`).
 
 ---
 
-Si quieres, puedo crear la repo en GitHub por ti (necesitaré tu autorización/token), o puedo ejecutar el `git push` si ya creaste el repo remoto. ¿Prefieres que lo haga ahora?
+Si quieres que haga algún cambio adicional al `README` (más capturas, instrucciones de desarrollo o badges), dímelo y lo actualizo.
+Este repositorio incluye una licencia MIT en `LICENSE`.
